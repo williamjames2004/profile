@@ -1,65 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Alkatra:wght@400..700&family=Kavivanar&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container{
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    gap: 10px;
-}
 .box{
-    max-width: 400px;
-    padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .profile{
-    max-width: 700px;
-    padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.img{
-    overflow: hidden;
-}
-.img img{
-    width: 350px;
 }
 .name{
     font-family: "Alkatra", system-ui;
-    font-weight: 400;
-    font-size: 40px;
     color: #ff0062;
     text-shadow: 3px 3px #ff5050;
 }
 .stack{
     font-family: "Acme", sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    margin-top: -10px;
 }
 .card{
-    padding: 20px 20px;
-    margin: 5px 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 5px;
-}
-.card p{
-    margin-top: -10px;
-}
-.profile .card3{
-    display: flex;
 }
 .card button{
-    width: 100px;
     background-color: #ff0062;
 }
 .tamil{
     font-family: "Kavivanar", cursive;
-    font-weight: 400;
-    font-style: normal;
 }
 .heading1{
     color: #007a51;
@@ -78,4 +39,14 @@ body{
 }
 .color3{
     color: #ff1b98;
+}
+@media screen and (max-width: 576px) {
+    .container{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
 }
