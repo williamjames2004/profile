@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="shortcut icon" href="https://www.vplayed.com/assets/images/favicon.ico" type="image/x-icon">
+    <title>Religious Streaming Platform</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        .outlinebtn{
+            border: 1px solid #fb7d17;
+            color: #fb7d17;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+        .requestbtn{
+            border: 1px solid #fb7d17;
+            background-color: #fb7d17;
+        }
+        header{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .features {
+            background: url("https://www.vplayed.com/assets/images/religious/blue-bg1.webp");
+            background-repeat: no-repeat;
+            background-size: cover;       
+            background-position: center;  
+        }
+        .community{
+            background-color: #F8F8F8;
+        }
+        .cus-card{
+            background-color: #EFF6FF;
+        }
+        .cms{
+            background-color: #F8F8F8;
+        }
+        .feature-box {
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover {
+            background-color: #f8f9fa;
+        }
+
+        .feature-box.active {
+            border: 2px solid #f0f7ff;
+            background-color: #f0f7ff;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .feature-box.active b {
+            color: #0d6efd;
+        }
+        .revenue{
+            background-color: #EFF7FF;
+        }
+        .reviews{
+            background-color: #E4F0FE;
+        }
+        .marquee {
+            animation: scrollX 40s linear infinite;
+            width: max-content;
+        }
+
+        @keyframes scrollX {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <header class="bg-light shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
+                <a class="navbar-brand" href="#">
+                    <img src="https://d3p5e262x57lj.cloudfront.net/images/Vplayed.png" width="180" alt="Vplayed">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse position-relative" id="navbarContent">
+                    <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+                        <li class="nav-item" id="proudctbtn">
+                            <a class="nav-link fw-bold text-dark" href="#">
+                            Products <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="solutionbtn">
+                            <a class="nav-link fw-bold text-dark" href="#">
+                            Solutions <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="aboutbtn">
+                            <a class="nav-link fw-bold text-dark" href="#">
+                            Resources <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-column flex-lg-row gap-2 text-center">
+                        <button class="btn outlinebtn py-3 fw-bold px-5">
+                            Contact Sales
+                        </button>
+                        <button class="btn requestbtn py-3 text-white fw-bold px-5">
+                            Request Demo
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row g-4 dropdown-box justify-content-center proudcts position-absolute bg-light border rounded-5 d-none w-100 start-50 translate-middle-x mt-2 px-4" id="proudcts">
+        <div class="col-lg-7 p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h4 class="text-primary"><b>OUR PRODUCTS</b></h4>
+                    <ul class="p-3">
+                        <li class="list-unstyled">
+                            <p class="fw-bold">OTT Streaming</p>
+                            <p>Deliver video Experience On Your Branded App</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Live Streaming & Broadcast</p>
+                            <p>Broadcast Live Events to Global Audiencess</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Short Video Platform</p>
+                            <p>Make Your Own Branded Short form Video App</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Cloud TV Platform</p>
+                            <p>Cloud Playout Solutions for Linear TV & Online BroadCasting</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Live-to-VOD</p>
+                            <p>Record Your Live Content & Stream into On-Demand video</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Video Content Management</p>
+                            <p>Store, Distribute, and Measure Your Video Content with Ease</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h4 class="text-primary"><b>OUR FEATURES</b></h4>
+                    <ul class="p-3">
+                        <li class="list-unstyled">
+                            <p class="fw-bold">HLS/ HTML5 Player</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Video Monetization</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Whitelabel Streaming</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">DRM & Security</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Video Marketing</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Real-time Analytics</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Encoding & Transcoding</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Video CDN</p>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="text-primary fw-bold text-decoration-none">
+                            Explore video CMS <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 p-4 left-box">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h4 class="text-primary"><b>MOBILE & TV APPS</b></h4>
+                    <ul class="p-3">
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Android & iOS</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Apple TV</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Android TV</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Fire TV</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Roko TV</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p class="fw-bold">Smart Tv</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h4 class="text-primary"><b>CUSTOMER STROIES</b></h4>
+                    <ul class="p-3">
+                        <li class="list-unstyled">
+                            <p>India's Premier News Network Runs on VPlayed</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p>VPlayed Powers Tamil's First 24/7 Entertainment App</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p>How USA's Top Yoga School Boosted its Viewers</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p>Indonesia's Top News Broadcaster Migrates to VPlayed</p>
+                        </li>
+                        <li class="list-unstyled">
+                            <p>Brazil's #1 Fitness Platform Makes 30% More Money</p>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="text-primary fw-bold text-decoration-none">
+                            All Case Studies <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 dropdown-box justify-content-center solutions position-absolute bg-light border rounded-5 d-none w-100 start-50 translate-middle-x mt-2 px-4" id="solutions">
+        <div class="col-lg-4 col-md-4 col-sm-10">
+            <ul class="p-3">
+                <li class="list-unstyled">
+                    <p class="fw-bold">Broadcast & Media</p>
+                    <p>Capture & Broadcast Video Content in Real-time</p>
+                </li>
+                <li class="list-unstyled">
+                    <p class="fw-bold">Filmmakers</p>
+                    <p>Scalable Platform for Distributors & Studio Owners</p>
+                </li>
+                <li class="list-unstyled">
+                    <p class="fw-bold">Education</p>
+                    <p>Education Made interactive, Engaging & Accessable</p>
+                </li>
+                <li class="list-unstyled">
+                    <p class="fw-bold">Fitness</p>
+                    <p>Build a Fitness Studio Online with Reliable Live & On-demand Video</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-10">
+            <ul class="p-3">
+                <li class="list-unstyled">
+                    <p class="fw-bold">Entertainment</p>
+                    <p>Stream & Experience Your Entertainment Platform</p>
+                </li>
+                <li class="list-unstyled">
+                    <p class="fw-bold">Religious</p>
+                    <p>Stream Live & On Demand Workships Anywhere</p>
+                </li>
+                <li class="list-unstyled">
+                    <p class="fw-bold">Sports</p>
+                    <p>Capture Every Moment & Engage Your Global Fans</p>
+                </li>
+                <li class="list-unstyled">
+                    <p class="fw-bold">Enterprise</p>
+                    <p>Reach Professional Audience With Streaming Platform</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row g-4 dropdown-box justify-content-center about position-absolute bg-light border rounded-5 d-none w-25 start-50 translate-middle-x mt-2 px-1" id="about">
+        <div class="col-lg-6 col-md-6 col-sm-10">
+            <h4 class="text-primary"><b>ABOUT VPLAYED</b></h4>
+            <ul class="p-1">
+                <li class="list-unstyled">
+                    <p class="fw-bold"><i class="bi bi-newspaper text-primary fs-2"></i> Blog</p>
+                    <p>Catch All The Current Happenings in OTT Under One Roof</p>
+                </li>
+                <li class="list-unstyled">
+                    <p class="fw-bold"><i class="bi bi-book text-primary fs-2"></i> Case Studies</p>
+                    <p>Explore How Our Customers Aced Streaming Business</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section class="hero-section py-5" id="herosection">
+    <div class="container">
+        <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start">
+
+            <img src="https://www.vplayed.com/assets/images/OTT/ratingsImage.svg" 
+                class="img-fluid mb-3" alt="ratingsImage">
+
+            <h4 class="fw-bold">
+            VPlayed For <span class="text-primary">Religious</span>
+            </h4>
+
+            <hr class="w-25 mx-auto mx-lg-0">
+
+            <h1 class="fw-bold">
+            Build Your Faith Community With a 
+            <span class="text-primary">Religious Streaming Platform</span>
+            </h1>
+
+            <hr class="w-50 mx-auto mx-lg-0">
+
+            <p class="mt-3">
+            Transform your offline religious community into a digital audience 
+            and expand your membership by up to 10x using specialized 
+            religious streaming solution.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-2 mt-3 justify-content-center justify-content-lg-start">
+            <button class="btn outlinebtn fw-bold px-5 py-3">
+                Contact Sales
+            </button>
+            <button class="btn requestbtn text-white fw-bold px-5 py-3">
+                Request Demo
+            </button>
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+            <img src="https://www.vplayed.com/assets/images/religious/vplayed-for-religious.webp" 
+                class="img-fluid" alt="vplayed-for-religious">
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="features">
+        <div class="container p-lg-5 py-4">
+            <div class="text-light">
+                <h1 class="text-center text-light fw-bold">Why Choose VPlayed To Build Your Religious Platform?</h1>
+                <p class="text-center text-light fs-5">Simplify church streaming – from start to finish – with user-friendly, 360° religious software built by a team of 300+ pro-level engineers. </p>
+                <div class="row g-3 d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="image">
+                            <img src="https://www.vplayed.com/assets/images/religious/religious-streaming.webp" alt="religious-streaming" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-10 p-5">
+                        <div class="box">
+                            <h4 class="text-light fw-bold">100% Customizable</h4>
+                            <p>Customize every bit of your religious platform at any level. Right from new feature addition, or modifying existing ones do anything & everything.</p>
+                        </div>
+                        <div class="box">
+                            <h4 class="text-light fw-bold">200+ Third-party Integrations</h4>
+                            <p>Integrate third-party resources to scale up with blissful streaming experience globally. Extract surplus revenue from a fully-functional platform. </p>
+                        </div>
+                        <div class="box">
+                            <h4 class="text-light fw-bold">Lifetime Ownership</h4>
+                            <p>Own up your church streaming platform with a lifetime streaming value. As a religious spokesperson, you can shape your divine acumen any time. </p>
+                        </div>
+                        <div class="box">
+                            <h4 class="text-light fw-bold">White Label Solution</h4>
+                            <p>Build a strong brand identity by white labeling your streaming services. Enable exclusive network building on the platform with your church followers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="streams">
+        <div class="container p-5">
+            <div class="text-dark">
+                <h1 class="text-center"><b>Increase Attendance With a Multipurpose Religious Platform</b></h1>
+                <p class="fs-5 text-center">Keep your members engaged all the time – Stream on-demand sermons, live-streaming of church events, multi-device support, offline playback and more! </p>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="image">
+                            <img src="https://www.vplayed.com/assets/images/religious/religious-platform.webp" alt="religious-platform" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 p-3">
+                        <h4 class="text-dark"><b>On-demand Sermons</b></h4>
+                        <p>Offer the best performing high-definition videos on your religious video platform.</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-5 p-3">
+                                <h4><b>Pre-recorded Streams</b></h4>
+                                <p>Spiritual entities can plan their short broadcasts in advance and stream them from libraries. </p>
+                            </div>
+                            <div class="col-lg-6 col-md-5 p-3">
+                                <h4><b>Video Recommendations</b></h4>
+                                <p>Parishioners can stream similar videos to those that are frequently viewed by followers. </p>
+                            </div>
+                            <div class="col-lg-6 col-md-5 p-3">
+                                <h4><b>Offline Downloads</b></h4>
+                                <p>Allow users to enjoy downloaded videos and sermons to watch later without network.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-5 p-3">
+                                <h4><b>Progressive Web Apps</b></h4>
+                                <p>Include best features of both worlds as users can add web pages on mobile home screens via PWAs. </p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-primary fw-bold text-decoration-none">Explore VOD <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-6 col-md-12 p-3">
+                        <h4 class="text-dark"><b>Live Streaming Worship</b></h4>
+                        <p>Experience the essence of group worship with live streaming for faith communities</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-5 p-3">
+                                <h4><b>Live To VOD</b></h4>
+                                <p>Record live-streamed videos & save as VODs. Share recordings who missed the event.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-5 p-3">
+                                <h4><b>Simulcasting</b></h4>
+                                <p>Offer your congregations with videos via multiple channels simultaneously.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-5 p-3">
+                                <h4><b>Live Chat</b></h4>
+                                <p>Faith-streaming owners can connect with viewers via chats powered by church-based software.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-5 p-3">
+                                <h4><b>Live Mobile Broadcasting</b></h4>
+                                <p>Engage audiences with live streaming services like conducting mass prayers remotely at churches </p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-primary fw-bold text-decoration-none">Explore live streaming <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="image">
+                            <img src="https://www.vplayed.com/assets/images/religious/live-streaming.webp" alt="live-streaming" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold">
+                    Engage With Your Community Instantly, Like Never Before
+                    </h2>
+                    <p class="fs-5 mt-3">
+                    Develop a camaraderie, fellowship with group prayers or connect personally with private prayers on your religious streaming platform.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="card cus-card h-100 text-center p-4 shadow-sm">
+                        <h4 class="fw-bold">Group Prayer</h4>
+                        <p>
+                            Streaming of religious activities like conducting group prayers is now made comprehensive with your own online prayer platform
+                        </p>
+                        <img src="https://www.vplayed.com/assets/images/religious/group-player.webp" class="img-fluid mt-3">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="card cus-card h-100 text-center p-4 shadow-sm">
+                    <h4 class="fw-bold">Private Prayer</h4>
+                    <p>
+                        Simplify the delivery of private prayers for devotees in any region. Create personalized streaming services from your church.
+                    </p>
+                    <img src="https://www.vplayed.com/assets/images/religious/private-player.webp" class="img-fluid mt-3">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="card cus-card h-100 text-center p-4 shadow-sm">
+                    <h4 class="fw-bold">Special Ceremonies and Rituals</h4>
+                    <p>
+                        Organized ceremonies and rituals can be offered on-demand continuously via streaming technologies like church video solutions
+                    </p>
+                    <img src="https://www.vplayed.com/assets/images/religious/rituals.webp" class="img-fluid mt-3">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="card cus-card h-100 text-center p-4 shadow-sm">
+                    <h4 class="fw-bold">Virtual Prayer</h4>
+                    <p>
+                        Illuminate your viewers with spiritual hymns and discourses right from the comfort of their homes. Cultivate a sacred atmosphere with a virtual streaming ecosystem.
+                    </p>
+                    <img src="https://www.vplayed.com/assets/images/religious/virtual-player.webp" class="img-fluid mt-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="launch bg-primary p-4">
+        <div class="container text-center text-light">
+            <p class="fs-1">Launch Easily & Grow Quickly With</p>
+            <p class="fs-1 fw-bold">A Religious Streaming Platform</p>
+            <p>Schedule a demo with product experts & we’ll get you on the road to streaming success</p>
+            <button type="button" class="btn requestbtn text-white fw-bold px-5 py-3">Request Demo</button>
+        </div>
+    </section>
+
+    <section class="cms py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">
+                    Manage Religious Content Easily With a Simple Video CMS
+                </h2>
+                <p class="fs-5 mt-3">
+                    Get all-format compatibility and manage all your content in one place with an easy-to-use and powerful content management system
+                </p>
+            </div>
+            <div class="row align-items-center g-5 px-2">
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h5 class="fw-bold">Upload Recorded Prayers</h5>
+                            <p>
+                            Upload bulk videos of on-demand prayers and archive your collections with organized video CMS. They can all be set with multi-lingual support.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="fw-bold">Multiple Format Support</h5>
+                            <p>
+                            The CMS technology from VPlayed lets faith streaming professionals stream in numerous formats like MPEG, AVI, MP4, FLV, etc.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="fw-bold">Video Scheduling</h5>
+                            <p>
+                            Procure high engagement rates by scheduling mass congregations, discourses in bulk via on-demand content management system.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="fw-bold">Content Partner Portal</h5>
+                            <p>
+                            Onboard your content partners anytime to stream their faith-based content and track performance from anywhere.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#" class="text-primary fw-bold text-decoration-none">
+                            Explore video CMS <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://www.vplayed.com/assets/images/religious/video-cms.webp"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details py-5">
+        <div class="container">
+            <h1 class="text-center mb-3">
+                <b>A Video Player Tailored Exclusively for Religious Streaming</b>
+            </h1>
+            <p class="text-center fs-5 mb-5">
+                Deliver seamless, unfettered streaming with a specialized video player, designed for immersive event experiences. 
+            </p>
+
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5 col-md-12" id="featureBox">
+
+                    <div class="feature-box cursor-pointer p-4 border rounded-4 mb-3 active" role="button">
+                        <b class="fs-5">Fastest Playback</b>
+                        <p>Enhance your followers' experience with a professional streaming software and HTML5 video player, delivering refined sermons for an enhanced spiritual journey.</p>
+                    </div>
+
+                    <div class="feature-box p-4 border rounded-4 mb-3" role="button">
+                        <b class="fs-5">Screencasting</b>
+                        <p class="d-none">Add a personal touch by facilitating devotees with recorded instructional videos along with audio narration. They can pause & rewatch segments. </p>
+                    </div>
+
+                    <div class="feature-box p-4 border rounded-4 mb-3" role="button">
+                        <b class="fs-5">Picture in Picture</b>
+                        <p class="d-none">Enable users to simultaneously play full-screen video and display a secondary video in an inset window, empowering streamers like you to engage audiences effectively.</p>
+                    </div>
+
+                    <div class="feature-box p-4 border rounded-4" role="button">
+                        <b class="fs-5">Subtitles & Caption</b>
+                        <p class="d-none">Church teams can add closed captions to their sermon videos with subtitles via live streaming software to expand their reach internationally. </p>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="#" class="text-primary fw-bold text-decoration-none">
+                            Explore HLS video player <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 text-center">
+                    <img src="https://www.vplayed.com/assets/images/religious/video-player.webp"class="img-fluid rounded-4" alt="video-player">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="revenue p-3">
+        <div class="container p-3">
+            <h1 class="text-center"><b>Turn Videos Into Recurring Revenue With 9+ Revenue Models</b></h1>
+            <p class="text-center fs-5">Build a steady income stream with your religious videos and monetize at your convenience with flexible monetization options.</p>
+            <div class="row g-3 justify-content-center mt-4 p-3 fs-5 border-bottum border-2">
+                <div class="col-lg-2 col-md-8">
+                    Pay Per View
+                </div>
+                <div class="col-lg-2 col-md-8">
+                    Subscription
+                </div>
+                <div class="col-lg-2 col-md-8">
+                    Advertising
+                </div>
+                <div class="col-lg-2 col-md-8">
+                    Sponsorships
+                </div>
+                <div class="col-lg-2 col-md-8">
+                    Donations
+                </div>
+            </div>
+            <div class="row g-3 justify-content-between align-items-center gap-2">
+                <div class="col-lg-6 col-md-10">
+                    <div class="image">
+                        <img src="https://www.vplayed.com/assets/images/religious/pay-per-view.webp" class="img-fluid" alt="pay-per-view">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10 fs-5">
+                    <h4><b>Pay Per View </b></h4>
+                    <p>Charge only for what you stream </p>
+                    <p>Engage your online congregation with pay-per-view access to exclusive spiritual content.</p>
+                    <p>Experience powerful sermons, heartfelt prayers, and uplifting hymns through our religious platform on a pay-per-view basis.</p>
+                    <p>Unlock premium content by purchasing individual sermons, special events, and inspirational teachings. </p>
+                    <div class="mt-5">
+                        <a href="#" class="text-primary fw-bold text-decoration-none">
+                            Explore HLS video player <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </section>
+
+    <section class="analytics p-4">
+        <div class="container p-4">
+            <h1 class="text-center"><b>Track Your Religious Streaming Attendance With Built-in Analytics </b></h1>
+            <p class="text-center fs-5">Monitor your content’s performance, members’ attention spans, drop-off rates, audience timeline – track everything at once on the built-in analytics.</p>
+
+            <div class="row g-3 justify-content-center mt-4">
+                <div class="col-lg-6 col-md-10">
+                    <ul class="d-flex flex-column gap-4">
+                        <li>
+                            <h5><b>Third-party Analytics Integration</b></h5>
+                            <p>Analyze data of your partnered collaborator’s streams with essential metrics and understand its content performance.</p>
+                        </li>
+                        <li>
+                            <h5><b>Audience Timeline</b></h5>
+                            <p>Capture an aerial view of user-level analytics with key indicators like number of views, clicks, revisits, within video assets. </p>
+                        </li>
+                        <li>
+                            <h5><b>Device Data</b></h5>
+                            <p>Grab insights of disciple’s device they use to gain information about their niche preferences of watching your religious-based content </p>
+                        </li>
+                        <li>
+                            <h5><b>Network Data</b></h5>
+                            <p>Get a glance on followership network data to see log files generated by users using mobile or web apps, information from social networks, purchases, etc. </p>
+                        </li>
+                    </ul>
+                    <div class="mt-5">
+                        <a href="#" class="text-primary fw-bold text-decoration-none">
+                            Explore video analytics <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <div class="image">
+                        <img src="https://www.vplayed.com/assets/images/religious/analytics.webp" alt="analytics" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="educators py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">
+                Trusted by Religious Educators Worldwide
+            </h2>
+            <p class="fs-5 mb-5">
+                Churches, mosques, and synagogues across the world use VPlayed to grow their community
+            </p>
+            <div class="overflow-hidden">
+                <div class="d-flex align-items-center gap-5 marquee">
+                    <!-- Repeat images for seamless loop -->
+                    <img src="https://www.vplayed.com/assets/images/home/client-logos.webp" class="img-fluid w-25" alt="client-logos">
+                    <img src="https://www.vplayed.com/assets/images/home/client-logos.webp" class="img-fluid w-25" alt="client-logos">
+                </div>
+            </div>
+
+            <div class="overflow-hidden mt-3">
+                <div class="d-flex align-items-center gap-5 marquee">
+                    <img src="https://www.vplayed.com/assets/images/home/client-logos-2.webp" class="img-fluid w-25" alt="client-logos-2">
+                    <img src="https://www.vplayed.com/assets/images/home/client-logos-2.webp" class="img-fluid w-25" alt="client-logos-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews py-5">
+        <div class="container">
+            <h1 class="text-center mb-3">
+                <b>Real People, Real Results — Genuine Customer Reviews</b>
+            </h1>
+
+            <p class="text-center fs-5 mb-5">
+                Our Clients Leverage VPlayed To Achieve Growth
+            </p>
+
+            <div class="row g-4 justify-content-center mt-5">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="card h-100 p-4 d-flex flex-column justify-content-between">
+
+                        <p class="fs-5">
+                            The VPlayed team helped us in putting together a robust fitness streaming platform in a short span of time. It was great working with their team who took a keen interest in hearing our ideas and executed them to perfection.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 mt-4">
+                            <img src="https://www.vplayed.com/assets/images/ads/icon2.webp" alt="icon2"
+                                class="rounded-circle object-fit-cover w-25">
+                            
+                            <div class="lh-sm">
+                                <div class="fw-bold">Juliana Wolfarth</div>
+                                <small class="text-muted">Product Manager, ZiYou</small>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h2 class="fw-bold mb-0">95%</h2>
+                            <small class="text-muted">customer retention</small>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="card h-100 p-4 d-flex flex-column justify-content-between">
+
+                        <p class="fs-5">
+                            VPlayed team is the best for our OTT platform development. They handled everything from design to maintenance with complete ownership. Their team is responsive, skilled, and truly invested in our OTT platform’s success. I couldn’t ask for a better tech partner.
+                        </p>
+
+                        <div class="d-flex align-items-center gap-3 mt-4">
+                            <img src="https://www.vplayed.com/assets/images/ads/icon3.webp"
+                                class="rounded-circle object-fit-cover w-25" alt="icon3">
+                            
+                            <div class="lh-sm">
+                                <div class="fw-bold">Sanjiv Patel</div>
+                                <small class="text-muted">CEO, Geo flixz+</small>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h2 class="fw-bold mb-0">300%</h2>
+                            <small class="text-muted">increase in viewership</small>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="card h-100 p-4 d-flex flex-column justify-content-between">
+
+                        <p class="fs-5">
+                            VPlayed’s flexible video management system and multiple monetization models enabled BS Value OTT to grow rapidly and become one of India’s top regional streaming platforms. We are excited about expanding our roadmap with the support of VPlayed team.
+                        </p>
+
+                        <div class="d-flex align-items-center gap-3 mt-4">
+                            <img src="https://www.vplayed.com/assets/images/ads/icon.webp" alt="icon"
+                                class="rounded-circle object-fit-cover w-25">
+                            
+                            <div class="lh-sm">
+                                <div class="fw-bold">RJ Vigneshkanth</div>
+                                <small class="text-muted">BS Value OTT</small>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h2 class="fw-bold mb-0">180%</h2>
+                            <small class="text-muted">increase in revenue</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo bg-primary py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="text-light fw-bold mb-4">
+                        Start Building Your Streaming Platform & Grow 3x Faster Without Revenue Sharing
+                    </h1>
+                    <div class="text-light mb-4">
+                        <p class="mb-2">✔ Get a 100% customized platform</p>
+                        <p class="mb-2">✔ Launch mobile & TV apps at once</p>
+                        <p class="mb-2">✔ Pay once; use and own forever</p>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+                        <button type="button" class="btn requestbtn text-white fw-bold px-5 py-3">Request Demo</button>
+                        <button class="btn border-1 border text-white fw-bold px-5 py-3">
+                            Talk to Sales
+                        </button>
+
+                    </div>
+                    <p class="text-light mb-3">
+                        Grow with 100+ brands that use VPlayed
+                    </p>
+                    <img src="https://www.vplayed.com/assets/images/new-home/clients.webp"
+                        class="img-fluid" alt="clients">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://www.vplayed.com/assets/images/cta/religious-streaming-cta.webp"
+                        class="img-fluid" alt="religious-streaming-cta">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-5 px-2">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+
+                    <h5 class="fw-bold mb-3">ABOUT VPLAYED</h5>
+                    <p class="text-light">
+                        VPlayed is a fully customizable OTT platform that lets you launch, manage, and monetize video content across multiple devices. It gives you complete control over your streaming business.
+                    </p>
+
+                    <div class="overflow-hidden my-3">
+                        <div class="d-flex gap-4 marquee">
+                            <img src="https://d3p5e262x57lj.cloudfront.net/images/all-awards.webp" alt="all-awards" class="img-fluid w-50">
+                        </div>
+                    </div>
+
+                    <h6 class="fw-bold mt-4">CONTUS TECH PRIVATE LIMITED</h6>
+                    <p class="text-light">
+                        The Hive Workspaces, Keppel One Paramount, Campus 30, Level 9, No. 110, Mount Poonamallee Road, Porur, Chennai, Tamil Nadu – 600116, India. 
+                    </p>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-6 col-md-3">
+                            <h5 class="fw-bold mb-3">SOLUTIONS</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li>OTT Platform</li>
+                                <li>Video on Demand</li>
+                                <li>Short Video Platform</li>
+                                <li>Online Video Platform</li>
+                                <li>Cloud TV Platform</li>
+                                <li>Live-to-VOD</li>
+                                <li>Live Streaming</li>
+                                <li>Whitelabel Streaming</li>
+                                <li><b>Hire OTT Developers</b></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h5 class="fw-bold mb-3">FEATURES</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li>HLS/ HTML5 Playe</li>
+                                <li>Video Monetization</li>
+                                <li>Video CMS</li>
+                                <li>Security & DRM</li>
+                                <li>Video Marketing</li>
+                                <li>Real-time Analytics</li>
+                                <li>Encoding & Transcoding</li>
+                                <li>Video CDN</li>
+                                <li>All Features</li>
+                                <li>How it Works</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h5 class="fw-bold mb-3">USE CASES</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li>BroadCasters</li>
+                                <li>Filmmakers</li>
+                                <li>Entertainment</li>
+                                <li>Religious</li>
+                                <li>Education</li>
+                                <li>Fitness</li>
+                                <li>Sports</li>
+                                <li>Religious</li>
+                                <li>Enterprise</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h6 class="fw-bold mb-3">COMPARE</h6>
+                            <ul class="list-unstyled lh-lg">
+                                <li>VPlayed vs Vimeo OTT</li> 
+                                <li>VPlayed vs Brightcove</li> 
+                                <li>VPlayed vs Dacast</li> 
+                                <li>VPlayed vs Uscreen</li> 
+                                <li>VPlayed vs Kaltura</li> 
+                                <li>VPlayed vs Muvi</li> 
+                                <li>VPlayed vs JW Player</li>
+                                <li>VPlayed vs Competitors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-5">
+            <div class="d-flex flex-wrap justify-content-center gap-5 small mb-5 fs-6">
+                <a href="#" class="text-light text-decoration-none">About Company</a>
+                <a href="#" class="text-light text-decoration-none">Careers</a>
+                <a href="#" class="text-light text-decoration-none">Blog</a>
+                <a href="#" class="text-light text-decoration-none">Request Demo</a>
+                <a href="#" class="text-light text-decoration-none">Contact Sales</a>
+                <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+            </div>
+            <div class="d-flex justify-content-center gap-4 fs-2 mb-4">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-linkedin"></i>
+            </div>
+            <div class="text-center">
+                <img src="https://d3p5e262x57lj.cloudfront.net/images/Vplayed.png"
+                    class="img-fluid mb-4 w-25" alt="Vplayed">
+                <p class="small mb-0">
+                    © <b>Contus.com</b> 2026 All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        function setupDropdown(btnId, boxId) {
+            const btn = document.getElementById(btnId);
+            const box = document.getElementById(boxId);
+
+            // Desktop hover
+            btn.addEventListener("mouseenter", () => {
+                box.classList.remove("d-none");
+            });
+
+            btn.addEventListener("mouseleave", () => {
+                setTimeout(() => {
+                    if (!box.matches(":hover")) {
+                        box.classList.add("d-none");
+                    }
+                }, 200);
+            });
+
+            box.addEventListener("mouseleave", () => {
+                box.classList.add("d-none");
+            });
+
+            // Mobile click
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll(".dropdown-box").forEach(d => {
+                    if (d !== box) d.classList.add("d-none");
+                });
+
+                box.classList.toggle("d-none");
+            });
+        }
+
+        // Apply to all
+        setupDropdown("proudctbtn", "proudcts");
+        setupDropdown("solutionbtn", "solutions");
+        setupDropdown("aboutbtn", "about");
+        
+        const boxes = document.querySelectorAll(".feature-box");
+
+        boxes.forEach((box) => {
+            box.addEventListener("click", () => {
+
+                // remove active from all
+                boxes.forEach((b) => {
+                    b.classList.remove("active");
+                    b.querySelector("p").classList.add("d-none");
+                });
+
+                // add active to clicked
+                box.classList.add("active");
+                box.querySelector("p").classList.remove("d-none");
+            });
+        });
+    </script>
+</body>
+</html>
